@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://TestStand.tscn" type="PackedScene" id=1]
+[ext_resource path="res://CameraRig.gd" type="Script" id=2]
+[ext_resource path="res://Controller.gd" type="Script" id=3]
+
+[node name="World" type="Spatial"]
+
+[node name="CameraRig" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="CameraRig"]
+transform = Transform( 0.64701, 0.427212, -0.63156, -0.762481, 0.363053, -0.535551, 0.000495978, 0.828059, 0.56064, -0.216, -0.172, 0.2 )
+
+[node name="TestStand" parent="." instance=ExtResource( 1 )]
+
+[node name="Controller" type="Node" parent="TestStand"]
+script = ExtResource( 3 )
