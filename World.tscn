@@ -17,3 +17,13 @@ transform = Transform( 0.64701, 0.427212, -0.63156, -0.762481, 0.363053, -0.5355
 
 [node name="Controller" type="Node" parent="TestStand"]
 script = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 24.0
+margin_top = 54.0
+margin_right = 78.0
+margin_bottom = 68.0
+text = "test text"
+__meta__ = {
+"_edit_use_anchors_": false
+}

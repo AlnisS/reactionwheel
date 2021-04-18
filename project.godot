@@ -19,6 +19,10 @@ config/name="1 Axis Reaction Wheel"
 run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
+[network]
+
+limits/debugger_stdout/max_chars_per_second=16384
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
